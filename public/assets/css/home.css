@@ -191,3 +191,74 @@
     width: 90%;
   }
 }
+
+
+/* Our Offerings Section */
+.our-offerings {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.our-offerings h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.offer-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Grid: 3 items per row (fixed) */
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Offer Item Card */
+.offer-item {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .offer-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+} */
+
+.offer-item img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.offer-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.offer-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive: Stack to 1 column on small screen */
+@media (max-width: 768px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

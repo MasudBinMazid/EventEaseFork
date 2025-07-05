@@ -71,13 +71,46 @@
 <!-- 🔹 Our Offerings -->
 <section class="our-offerings">
   <h2>Our Offerings</h2>
+  <p class="offer-subtitle">Explore the key features that make Tickify the perfect choice for event organizers!</p>
   <div class="offer-grid">
-    <div class="offer-item">🎟️ Ticket Booking</div>
-    <div class="offer-item">📊 Event Analytics</div>
-    <div class="offer-item">🎥 Live Streaming</div>
-    <div class="offer-item">📢 Promotion Tools</div>
+    <div class="offer-item">
+      <img src="{{ asset('assets/icons/ticket-purchase.png') }}" alt="Easy Ticket Purchase" />
+      <h3>Easy Ticket Purchase</h3>
+      <p>Browse, and purchase tickets for a variety of events, from concerts to conferences, all from your device with ease and convenience.</p>
+    </div>
+
+    <div class="offer-item">
+      <img src="{{ asset('assets/icons/ticket-delivery.png') }}" alt="Instant Ticket Delivery" />
+      <h3>Instant Ticket Delivery</h3>
+      <p>Receive your tickets immediately upon purchase via email. If preferred, users can also opt to receive their tickets on WhatsApp.</p>
+    </div>
+
+    <div class="offer-item">
+      <img src="{{ asset('assets/icons/payment-methods.png') }}" alt="Multiple Payment Methods" />
+      <h3>Multiple Payment Methods</h3>
+      <p>Enjoy flexible payment options with bKash, Nagad, Upay, Visa, Mastercard, and more, ensuring secure and smooth transactions.</p>
+    </div>
+
+    <div class="offer-item">
+      <img src="{{ asset('assets/icons/tickipass.png') }}" alt="Tickipass Feature" />
+      <h3>Tickipass Feature</h3>
+      <p>Access purchased tickets instantly with Tickipass, displaying QR codes from your device, eliminating the need for printed e-ticket PDFs.</p>
+    </div>
+
+    <div class="offer-item">
+      <img src="{{ asset('assets/icons/dashboard.png') }}" alt="Comprehensive Dashboard" />
+      <h3>Comprehensive Dashboard</h3>
+      <p>Access real-time sales reports and attendance data through our user-friendly dashboard, providing valuable insights at your fingertips.</p>
+    </div>
+
+    <div class="offer-item">
+      <img src="{{ asset('assets/icons/scanning.png') }}" alt="Smooth Scanning" />
+      <h3>Smooth Scanning</h3>
+      <p>Streamline the entry process with our efficient ticket scanning system, ensuring a hassle-free experience for attendees and organizers.</p>
+    </div>
   </div>
 </section>
+
 
 <!-- 🔹 FAQ Section -->
 <section class="faq-section">
