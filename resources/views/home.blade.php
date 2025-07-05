@@ -9,33 +9,40 @@
 @section('content')
 <!-- 🔹 Hero Section -->
 <section class="hero-section">
-  {{-- Banner Slider --}}
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <a href="https://eventease.com/event1" class="slide-link active" target="_blank">
-        <img src="{{ asset('assets/images/banner1.jpg') }}" class="slide-img" />
-      </a>
-      <a href="https://eventease.com/event2" class="slide-link" target="_blank">
-        <img src="{{ asset('assets/images/banner2.jpg') }}" class="slide-img" />
-      </a>
-      <a href="https://eventease.com/event3" class="slide-link" target="_blank">
-        <img src="{{ asset('assets/images/banner3.jpg') }}" class="slide-img" />
-      </a>
-    </div>
-    <button class="slider-btn prev" id="prevBtn">←</button>
-    <button class="slider-btn next" id="nextBtn">→</button>
-  </div>
+  <div class="hero-flex-container">
+    {{-- Banner Slider --}}
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <a href="https://eventease.com/event1" class="slide-link active" target="_blank">
+          <img src="{{ asset('assets/images/banner1.jpg') }}" class="slide-img" alt="Event 1" />
+        </a>
+        <a href="https://eventease.com/event2" class="slide-link" target="_blank">
+          <img src="{{ asset('assets/images/banner2.jpg') }}" class="slide-img" alt="Event 2" />
+        </a>
+        <a href="https://eventease.com/event3" class="slide-link" target="_blank">
+          <img src="{{ asset('assets/images/banner3.jpg') }}" class="slide-img" alt="Event 3" />
+        </a>
+      </div>
+      <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">←</button>
+      <button class="slider-btn next" id="nextBtn" aria-label="Next slide">→</button>
 
-  {{-- Embedded YouTube Video --}}
-  <div class="video-section">
-    <iframe width="100%" height="300"
-      src="https://www.youtube.com/embed/1La4QzGeaaQ?rel=0&autoplay=0"
-      title="EventEase Promo"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+      <div class="slider-indicators" id="sliderDots"></div>
+
+    </div>
+
+    {{-- Embedded YouTube Video --}}
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/1La4QzGeaaQ?rel=0&autoplay=0"
+        title="EventEase Promo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 </section>
+
+
 
 <!-- 🔹 Upcoming Events -->
 <section class="upcoming-events">
@@ -74,7 +81,7 @@
   <p class="offer-subtitle">Explore the key features that make Tickify the perfect choice for event organizers!</p>
   <div class="offer-grid">
     <div class="offer-item">
-      <img src="{{ asset('assets/icons/ticket-purchase.png') }}" alt="Easy Ticket Purchase" />
+      <img src="{{ asset('assets/icons/image1.png') }}" alt="Easy Ticket Purchase" />
       <h3>Easy Ticket Purchase</h3>
       <p>Browse, and purchase tickets for a variety of events, from concerts to conferences, all from your device with ease and convenience.</p>
     </div>
@@ -115,17 +122,33 @@
 <!-- 🔹 FAQ Section -->
 <section class="faq-section">
   <h2>Frequently Asked Questions</h2>
-  <div class="faq">
-    <h3>🎫 How do I buy a ticket?</h3>
-    <p>You can book tickets through the Events section after logging in.</p>
+  <div class="faq-container">
 
-    <h3>📍 Where are the events hosted?</h3>
-    <p>We host both online and offline events. Locations are shown on each event card.</p>
+    <div class="faq-item">
+      <button class="faq-question">How do I buy a ticket? <span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>You can book tickets through the Events section after logging in.</p>
+      </div>
+    </div>
 
-    <h3>🔄 Can I refund or reschedule?</h3>
-    <p>Yes, depending on the event organizer's policy. See event terms for details.</p>
+    <div class="faq-item">
+      <button class="faq-question">Where are the events hosted? <span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>We host both online and offline events. Locations are shown on each event card.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I refund or reschedule? <span class="icon">+</span></button>
+      <div class="faq-answer">
+        <p>Yes, depending on the event organizer's policy. See event terms for details.</p>
+      </div>
+    </div>
+
   </div>
 </section>
+
+
 @endsection
 
 @section('extra-js')
