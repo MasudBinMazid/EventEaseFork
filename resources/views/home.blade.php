@@ -39,22 +39,34 @@
 
 <!-- 🔹 Upcoming Events -->
 <section class="upcoming-events">
-  <h2>Explore Upcomings</h2>
+  <h2>Explore Upcoming Events</h2>
   <div class="event-cards">
-    <div class="card">
-      <img src="{{ asset('assets/images/tech.jpg') }}" alt="Tech Summit">
-      <p>Tech Summit 2025</p>
-    </div>
-    <div class="card">
-      <img src="{{ asset('assets/images/music.jpg') }}" alt="Music Fest">
-      <p>Music Fest Live</p>
-    </div>
-    <div class="card">
-      <img src="{{ asset('assets/images/startup.jpg') }}" alt="Startup Fair">
-      <p>Startup Fair</p>
-    </div>
+    <a href="https://eventease.com/tech-summit" class="event-card" target="_blank">
+      <img src="{{ asset('assets/images/tech.png') }}" alt="Tech Summit">
+      <div class="card-info">
+        <h3>Tech Summit 2025</h3>
+        <p>March 15 • Convention Center</p>
+      </div>
+    </a>
+
+    <a href="https://eventease.com/music-fest" class="event-card" target="_blank">
+      <img src="{{ asset('assets/images/music.png') }}" alt="Music Fest">
+      <div class="card-info">
+        <h3>Music Fest Live</h3>
+        <p>April 10 • Open Air Arena</p>
+      </div>
+    </a>
+
+    <a href="https://eventease.com/startup-fair" class="event-card" target="_blank">
+      <img src="{{ asset('assets/images/startup.png') }}" alt="Startup Fair">
+      <div class="card-info">
+        <h3>Startup Fair</h3>
+        <p>May 5 • Tech Hub Hall</p>
+      </div>
+    </a>
   </div>
 </section>
+
 
 <!-- 🔹 Our Offerings -->
 <section class="our-offerings">
